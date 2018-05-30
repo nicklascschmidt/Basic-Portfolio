@@ -1,44 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Contact</title>
+    
+    <link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+
 
 </head>
 
 <body>
    
-    <!-- Website header -->
-    <h1>Nicklas Chen Schmidt</h1>
+    <div id="background">
 
-    <!-- Page title -->
-    <h2>Contact</h2>
+        <!-- HEADER -->
+        <div id="header">
+            
+            <div id="whiteHeader">
+                <div class="myNameContainer">
+                    <div class="myNameFont">
+                        Nicklas Chen Schmidt
+                    </div>
+                </div>
+                
+                <ul class="tabsPosition tabsFont clearfix">
+                    <li>
+                        <a>About</a>
+                    </li>
+                    <li>
+                        <a>Portfolio</a>
+                    </li>
+                    <li>
+                        <a>Contact</a>
+                    </li>
+                </ul>
 
-    <hr>
+            </div>
 
-    <!-- Tabs - top right -->
-    <h3>About</h3>
-    <h3>Portfolio</h3>
-    <h3>Contact</h3>
+        </div>
 
-    <!-- Contact form -->
-    <form>
-        Name<br>
-        <input type="text" name="Name"><br>
-        Email<br>
-        <input type="text" name="Email"><br>
+        <br class="clear"/>
+        
 
-        Message<br>
-        <input type="text" name="Message"><br>
 
-        <input type="submit" value="Submit">
-    </form>
-    
+
+        <!-- BODY -->
+        <div class="mainContentBoxContainer">
+
+            <div class="mainContentBox">
+
+                
+                <!-- Page title -->
+                <div class="titleFont">
+                    <h2>Contact</h2>
+                </div>
+
+                <br>
+                <hr>
+                <br>
+                
+                
+                <!-- EDIT SPACING FOR TEXT LINES IN FORM -->
+
+                <!-- Contact form -->
+                <form class="formText font">
+                    Name<br>
+                    <input type="text" name="Name" class="formField" placeholder="Johnny Johnson"><br>
+                    Email<br>
+                    <input type="text" name="Email" class="formField" placeholder="johnnyjohnson@gmail.com"><br>
+
+                    Message<br>
+                    <textarea rows="10" columns="20" class="formMessageBox"></textarea><br>
+
+
+                    <input type="submit" value="Submit" class="formSubmitButton">
+                </form>
+        
+
+            </div>
+
+            
+        </div>
+
+        <br class="clear"/>
+
+        <!-- FOOTER -->
+        <div id="footerContainer">
+
+            <div class="copyrightText">
+            Copyright © Nicklas Chen Schmidt 2018
+            </div>
+
+        </div>
+
+
+
+    </div>
+
 
 </body>
-
-<footer>
-    <p>Copyright © Nicklas Chen Schmidt 2018</p>
-</footer>
 
 </html>
 

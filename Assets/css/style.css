@@ -9,6 +9,11 @@
 	Clear: both;
 }
 
+.clear {
+    clear: both;
+}
+
+
 /* background image - cloudz */
 #background {
     background: url(../images/cloudy-day.png);
@@ -24,6 +29,9 @@
     height: 4rem;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     /* margin: 0 0 2rem 0; */
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 0 0 .13rem 0;
 }
 
 #whiteHeader {
@@ -50,12 +58,13 @@
     padding: 0 1rem;
     text-align: center;
     width: 60%;
+    font-family: 'Georgia', Times, serif;
 }
 
 
 /* top right tabs */
 .tabsFont {
-    color: grey;
+    color: #e7e7e7;
 }
 
 .tabsPosition {
@@ -98,34 +107,58 @@ ul li a:hover {
 
 
 /* BODY */
+.mainContentBoxContainer {
+    width: 60rem;
+    margin: auto;
+    height: auto;
+    
+    background-color: #ffffff;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: .1rem;
+}
+
+
 .titleFont {
     color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;    
 }
 
 .mainContentBox {
-    background-color: #ffffff;
-    border-color: #dddddd;
-    border-style: solid;
-    border-width: 1px;
-
-    width: 56rem;
-    padding: 2rem;
+    
+    width: 94%;
+    padding: 2rem 0;
     margin: auto;
     height: auto;
+
 }
 
-.clear {
-    clear: both;
+/* general font formatting */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
 }
+
+h2 {
+    font-size: 1.7rem;
+}
+
+hr {
+    border-style: solid;
+    border-width: .15rem 0 0 0;
+    border-color: #cccccc;
+}
+
 
 /* my picture */
 .aboutMeMyPicturePosition {
-    padding: .8rem 1rem .5rem 0;
     height: 15rem;
     object-fit: cover;
+    padding: .2rem 1rem .5rem 0;
 }
 
+
+
+/* Portfolio images and text overlay */
 .portfolioFlexBox {
     display: flex;
     flex-direction: ltr;
@@ -135,7 +168,6 @@ ul li a:hover {
     padding: 1rem 0;
     width: 80%;
 }
-
 
 .textOverlayContainer {
     position: relative;
@@ -151,7 +183,6 @@ ul li a:hover {
     margin: 1rem;
 }
 
-
 .textOverlay {
     position: absolute;
     top: 62%;
@@ -164,23 +195,51 @@ ul li a:hover {
     padding: 1rem 0;
 }
 
-/* Create two equal columns that sits next to each other
-.column {
-    flex: 50%;
-    padding: 0 4px;
+
+
+/* Contact form */
+.formText {
+    color: #777777;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    width: 98%;
 }
-*/
 
 
+.formField {
+    width: 100%;
+    padding: .5rem;
+    margin: auto;
+}
+
+.formMessageBox {
+    width: 100%;
+    height: 10rem;
+    text-align: start;
+    border-width: 1px;
+    border-color: #dddddd;
+    padding: .5rem;
+}
+
+.formSubmitButton {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: .5rem 1.5rem;
+}
 
   
 
 
-/* paragraph text */
+/* About Me paragraph text */
 p {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     line-height: 1.5rem;
+}
+
+.floatLeft {
+    float: left;
 }
 
 
@@ -210,84 +269,16 @@ p {
 
 
 
+/* BONUS - cool stuff! */
 
 
 
 
 
-/* EXTRA
-body {
-    background-color: white;
-}
 
-h1 {
-    color: black;
-    text-align: center;
-}
 
-h2 {
-    color: black;
-    font-weight: bold;
-}
 
-h3, p {
-    color: black;
-}
 
-p, li {
-    font-size: 24px;
-    font-size: 100%;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.font {
-    font-family: "Courier New", verdana, monospace;
-}
-
-.bigorangebold {
-    font-size: 200%;
-    color: orange;
-    font-weight: bold;
-}
-
-.styledFont {
-    color: green;
-}
-
-.centered {
-    text-align: center;
-}
-
-.tiny {
-    font-size: 30%;
-}
-
-.big {
-    font-size: 200%;
-}
-
-.red {
-    color: red;
-}
-
-.blue {
-    color: blue;
-}
-
-.green {
-    color: green;
-}
-
-.border {
-    border-width: 10px;
-    border-style: solid;
-    border-color: orange;
-}
-
-*/
 
 
 
